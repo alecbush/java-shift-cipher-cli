@@ -27,9 +27,9 @@ public class CipherCommand implements Runnable {
     private KeyOptions keyOptions;
 
     private static class KeyOptions {
-        @Option(names = {"-s", "--shift"}, description = "Shift text value.")
+        @Option(names = {"-s", "--shift"}, description = "Integer value to shift character values.")
         Integer shift;
-        @Option(names = {"-k", "--key"}, description = "Key value to apply to text.")
+        @Option(names = {"-k", "--key"}, description = "String value to apply multiple character shifts.")
         String key;
     }
 
