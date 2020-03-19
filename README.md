@@ -1,7 +1,7 @@
 # java-shift-cipher-cli
 A Caesar and Vigenere cipher CLI tool for personal use. Built w/ [Picocli](https://picocli.info/).
 
-Current version 0.1.0.
+Current version 0.1.1.
 ## Requirements
 * Java 8
 * Maven 3
@@ -11,7 +11,7 @@ Use maven to clean the project.
 ```
 mvn clean
 ```
-Maven install will build a .jar file titled shiftcipher-0.1.0.jar in the target directory.
+Maven install will build a .jar file titled shiftcipher-0.1.1.jar in the target directory.
 ```
 mvn install
 ```
@@ -32,21 +32,21 @@ The [Vigenère cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher) uses 
 
 ### Caesar - Encrypt
 ```
-$ java -jar shiftcipher-0.1.0.jar "Hello, World!" -e -s 7
+$ java -jar shiftcipher-0.1.1.jar "Hello, World!" -e -s 7
 Olssv, Dvysk!
 ```
 ### Caesar - Decrypt
 ```
-$ java -jar shiftcipher-0.1.0.jar "Olssv, Dvysk!" -d -s 7
+$ java -jar shiftcipher-0.1.1.jar "Olssv, Dvysk!" -d -s 7
 Hello, World!
 ```
 ### Vigenere - Encrypt
 ```
-$ java -jar shiftcipher-0.1.0.jar "Hello, World!" -e -k "secret"
+$ java -jar shiftcipher-0.1.1.jar "Hello, World!" -e -k "secret"
 Zincs, Pgvnu!
 ```
 ### Vigenere - Decrypt
 ```
-$ java -jar shiftcipher-0.1.0.jar "Zincs, Pgvnu!" -d -k "secret"
+$ java -jar shiftcipher-0.1.1.jar "Zincs, Pgvnu!" -d -k "secret"
 Hello, World!
 ```
