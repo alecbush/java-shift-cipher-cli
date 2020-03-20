@@ -33,6 +33,6 @@ public abstract class ShiftCipher {
         if (negateShift) {
             shiftValue = -shiftValue;
         }
-        return (Math.floorMod(value + shiftValue, 26) + offset);
+        return Math.floorMod(value + shiftValue, 26) + offset;
     }
 }
